@@ -17,15 +17,14 @@ Machine learning model for customer segmentation using the [Online Retail datase
 
 ## 📌 Project Overview
 
-Clustering: How do customers cluster based on their purchasing behavior (eg., product quantities, unit prices, and transaction frequency)
+Clustering: We are to segment customers into meaningful behavioral groups based on their purchasing behavior(eg., product quantities, unit prices, and transaction frequency), country of origins etc.
 
-TODO (adjust and complete): This project explores both supervised and unsupervised learning techniques to cluster customers based on purchasing behavior: Recency, Frequency, and Monetary like  product quantities, unit prices, and transaction frequency to help business owner .
+TODO (adjust and complete): This project explores both supervised and unsupervised learning techniques to cluster customers based on purchasing behavior: Recency, Frequency, and Monetary like  product quantities, unit prices, and transaction frequency to help business decision and stretegie. The project tries to identify differnt segments based on the clustering results to reflect customer behaviour. This can provide customer insights to turn complex purchasing data into actionable insights that are easy to interpret to non-technical user.
 
 
 **Dataset Summary:**  
-TODO (adjust and complete) This transactional dataset contains all purchases made between 01/12/2010 and 09/12/2011 by customers of a UK-based online retailer specializing in unique all-occasion gifts. Many customers are wholesalers. The raw dataset has about 541909 records. 
+This transactional dataset contains all purchases made between 01/12/2010 and 09/12/2011 by customers of a UK-based online retailer specializing in unique all-occasion gifts. Many customers are wholesalers. The raw dataset has about 541909 records with eight fields:InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.                         
 
----
 
 ## 🎯 Objectives & Success Criteria
 
