@@ -19,17 +19,16 @@ Machine learning model for customer segmentation using the [Online Retail datase
 
 Clustering: How do customers cluster based on their purchasing behavior (eg., product quantities, unit prices, and transaction frequency)
 
-TODO (adjust and complete): This project explores unsupervised learning techniques to cluster customers based on purchasing behavior - including product quantities, unit prices, and transaction frequency.
+This project explores unsupervised learning techniques to cluster customers based on purchasing behavior - including product quantities, unit prices, and transaction frequency.
 
 
 **Dataset Summary:**  
-TODO (adjust and complete) This transactional dataset contains all purchases made between 01/12/2010 and 09/12/2011 by customers of a UK-based online retailer specializing in unique all-occasion gifts. Many customers are wholesalers.
+This transactional dataset contains all purchases made between 01/12/2010 and 09/12/2011 by customers of a UK-based online retailer specializing in unique all-occasion gifts. Many customers are wholesalers.
 
 ---
 
 ## 🎯 Objectives & Success Criteria
 
-TODO (adjust and complete):
 - Identify meaningful customer clusters using unsupervised learning
 - Evaluate clustering quality using metrics like silhouette score and intra-cluster variance
 - Ensure reproducibility and interpretability of the pipeline
@@ -88,7 +87,6 @@ Steps
 
 ### Exploratory Analysis
 
-TODO (adjust and complete):
 
 We used SQLite to extract revelant information for our analysis:
 
@@ -96,6 +94,7 @@ We used SQLite to extract revelant information for our analysis:
   20,524 valid transaction
 
 - Distribution of the top 10 sales by country
+
 | Country         | Transactions | Total Revenue     |
 |----------------|--------------|-------------------|
 | United Kingdom | 18,628       | £8,693,481.34     |
@@ -110,6 +109,7 @@ We used SQLite to extract revelant information for our analysis:
 | Japan           | 19           | £37,416.37        |
 
 - Top 10 selling products overall
+
 | StockCode | Description                               | Total Sold |
 |-----------|-------------------------------------------|------------|
 | 84077     | WORLD WAR 2 GLIDERS ASSTD DESIGNS         | 54,999     |
@@ -129,6 +129,7 @@ We used SQLite to extract revelant information for our analysis:
 
 - RFM (Recency, Frequency, Monetary) analysis for feature engineering
   #feature_analysis file under experiments folder (needs paraphrasing)
+
 CustomerID | Recency | Frequency | Monetary | RFM Score | Interpretation                          |
 |------------|---------|-----------|----------|-----------|------------------------------------------|
 | 12347      | 2       | 7         | £4,310.00| 5-5-5     | Best customer: recent, frequent, high spender |
