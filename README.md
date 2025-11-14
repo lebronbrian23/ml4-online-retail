@@ -1,15 +1,5 @@
-Machine Learning Guiding Questions (To delete before submission)
 
-What are the specific objectives and success criteria for your machine learning model?          Introduction
-How can you select the most relevant features for training?                                     Data Intro & Analysis    
-Are there any missing values or outliers that need to be addressed through preprocessing?       Data Intro & Analysis
-Which machine learning algorithms are suitable for the problem domain?                          Initial Model Development
-What techniques are available to validate and tune the hyperparameters?                         Initial Model Development
-How should the data be split into training, validation, and test sets?                          Initial Model Development
-Are there any ethical implications or biases associated with the machine learning model?        Model Interpretation
-How can you document the machine learning pipeline and model architecture for future reference? Conclusion(s)
-
-# 🛍️ ML4 Online Retail Case Study
+# 🛍️ Machine Learning Online Retail Case Study
 
 Machine learning model for customer segmentation using the [Online Retail dataset](https://archive.ics.uci.edu/dataset/352/online+retail).
 
@@ -17,10 +7,9 @@ Machine learning model for customer segmentation using the [Online Retail datase
 
 ## 📌 Project Overview
 
+This project applies unsupervised learning techniques to segment customers based on purchasing behavior using Recency, Frequency, and Monetary (RFM) metrics derived from a year’s worth of transactional data from a UK-based online retailer. The dataset includes over 541,000 records, capturing product quantities, unit prices, invoice dates, and customer locations. Our goal is to identify meaningful customer segments and form well-separated, stable clusters that reflect real behavioral patterns across both retail and wholesale buyers.
 
-This project explores focus on unsupervised learning techniques to cluster customers based on purchasing behavior: Recency, Frequency, and Monetary like product quantities, unit prices, and transaction frequency. It applies the machine learning techniques to the online retail dataset. Our goal is to identify meaningful customer segment and create well-separated stable clusters with balance segmentation. The project tries to identify different segments based on RFM metrics to reflect customer behaviour. The distinct customer groups characterized in the project can help the business better understand its products and customers in terms of their profitability. It also turns complex purchasing data into provide customer insights that are easy to interpret to non-technical user.
-
-
+These insights will help the business better understand customer profitability and tailor strategies accordingly. By turning complex purchasing data into interpretable visualizations and summaries, the project delivers actionable insights accessible to both technical and non-technical stakeholders.
 
 **Dataset Summary:**  
 This transactional dataset contains all purchases made between 01/12/2010 and 09/12/2011 by customers of a UK-based online retailer specializing in unique all-occasion gifts. Many customers are wholesalers. The raw dataset has about 541909 records with eight fields:InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.                         
@@ -42,6 +31,21 @@ Success Criteria:
 -	Unbias segmentation 
 
 ## 📊 Data Introduction & Analysis
+
+### Requirements
+This project uses the following Python libraries
+- pandas: For analyzing, manipulating, and getting insights from datasets.
+- NumPy: For efficient numerical computations and fast matrix operations.
+- scikit-learn: For machine learning algorithms, preprocessing, model selection, and evaluation.
+- matplotlib: For creating static, interactive, and animated plots and visualizations.
+- scikit-plot: For additional plotting capabilities for - scikit-learn objects.
+- timedelta
+- matplotlib
+- seaborn
+- sqlite3
+- logging
+- openpyxl
+
 
 ### Raw Data
 
@@ -212,32 +216,47 @@ K-Means cluster analysis (without outlier):
 | 1       | £1,871.11        | £919.61           | 4.66              | 3.0                 | £388.49                | £308.18                 |
 | 2       | £82,425.61       | £59,557.62        | 69.54             | 56.0                | £1,731.74              | £1,152.23               |
 
-<!-- ![DBSCAN PCA](To add) -->
 
 ---
 
-## ✅ Conclusions
+## ✅ Conclusion and recommendations for the business
 
-- Summary of best-performing clustering approach:
+#### These three clusters help the business tailor its strategy:
+ - Cluster 0 (low-value customers): use low-cost marketing or re-engagement campaigns without overspending on acquisition.
+ - Cluster 1 (moderate customers): target with promotions to increase spending and move them toward high-value status.
+ - Cluster 2 (high-value customers): prioritize with loyalty rewards and personalized offers to maximize retention and revenue.
+#### Together, these insights allow the company to optimize marketing budget, improve retention, and increase profitability.
 
-- Key insights from customer segments:
+## ⚠️ Risks and Unknowns
+- Missing IDs: A significant portion of transactions lack CustomerID, which introduces sampling bias. These anonymous purchases may represent one-time buyers, wholesale orders, or system errors.
+- Returns Ignored: returns behavior is itself a valuable signal of customer satisfaction or fraud risk. Ignoring it may lead to overestimating customer value, especially for high-frequency buyers with high return rates.
+- Outlier Impact: Extreme buyers distort clusters; removing them improves balance.
+- Time Sensitivity: The dataset spans a single year, and customer behavior may shift seasonally or over time.
 
-- Recommendations for business applications:
+## 🧭 Ethical Considerations
+- Country Targeting: Risk of bias or exclusion in location-based strategies.
+- Fairness: Segments may lead to unequal treatment or missed opportunities.
+- Transparency: Non-technical users need clear explanations of what clusters mean.
+- Privacy: Even though the dataset is anonymized, we have to make sure to get the right  permission or disclosure.
 
-- Limitations and future work: Deployment of models on to the cloud using AWS or GCP. Implement supervised models to identify loyal customers (will need to set some labeling prior model implementation). Create interactive website for further analysis.
 
+## Future Work 
+- Deployment of models on to the cloud using AWS or GCP. 
+- Implement supervised models to identify loyal customers (will need to set some labeling prior model implementation). 
+- Create interactive web platform for further analysis.
+- Get more data for atleast 5 years to train the model for better results.
 
 ---
 
 ## 👥 Team Members
 
-- Brian Ssekalegga  
-- Luis Curiel Rojas  
-- Meisam Mofidi  
-- Minling Lian
+- [Brian Ssekalegga](https://github.com/lebronbrian23)  
+- [Luis Curiel Rojas](https://github.com/luis999-eng) 
+- [Meisam Mofidi](https://github.com/meisammofidi) 
+- [Minling Lian](https://github.com/lianml2025)
 
 ---
 
-## 🎥 Interactive Content (could be merged with the team members section)
-- TODO (adjust and complete):
-Links to demo videos, dashboards, or notebooks (to be added).
+## 🎥 Interactive Content 
+
+Links to demo videos.
