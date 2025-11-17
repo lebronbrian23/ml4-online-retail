@@ -1,0 +1,15 @@
+name: online_retail_model
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - pandas
+  - numpy
+  - timedelta
+  - matplotlib
+  - seaborn
+  - sqlite3
+  - sklearn
+  - logging
+  - openpyxl
