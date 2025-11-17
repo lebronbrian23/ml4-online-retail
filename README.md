@@ -216,3 +216,5 @@ The we ranked each customer based on their total RFM score: Recency score + Freq
 ## 🎥 Interactive Content (could be merged with the team members section)
 - TODO (adjust and complete):
 Links to demo videos, dashboards, or notebooks (to be added).
+--Minling LIAN
+[▶️ Watch the Video] (https://drive.google.com/file/d/1Irao5j3ULGAOsHsr2ptc2dVmtO3aoHQZ/view?usp=sharing)
